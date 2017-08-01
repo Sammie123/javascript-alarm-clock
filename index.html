@@ -20,17 +20,20 @@
       <h3 id="clock"></h3>
 
       <h3>Set your preferred alarm time:</h3>
-      <label class="hours">Hours
-      <input type="number" value="0" min="0">
-      </label>
-      <label class="hours">Minutes
-      <input type="number" value="0" min="0">
-      </label>
-      <label class="hours">Seconds
-      <input type="number" value="0" min="0">
-      </label>
-      <a id="alarm-set" class="btn-success">Alarm Set</a>
-      <a id="alarm-clear" class="btn-danger">Alarm Clear</a>
+      <form id="alarm-form">
+        <label class="hour">Hours</label>
+        <input id="hour" type="number" value="0" min="0">
+
+        <label class="minute">Minutes</label>
+        <input id="minute" type="number" value="0" min="0">
+
+        <!-- <label class="alarmSeconds">Seconds</label>
+        <input id="alarmSeconds" type="number" value="0" min="0"> -->
+        <h3 class="alarm-set"></h3>
+        <button class="submit" id="alarm">Alarm Set</button>
+      </form>
+      <!-- <a id="alarm-clear" class="btn-danger">Alarm Clear</a> -->
+
     </div>
   </body>
 </html>
