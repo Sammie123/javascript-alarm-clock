@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.5/moment-timezone-with-data.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="container box">
+      <h3 id="show_date"></h3>
+      <h3>Well look at the time! </h3>
+      <h3 id="clock"></h3>
+
+      <h3>Set your preferred alarm time:</h3>
+      <label class="hours">Hours
+      <input type="number" value="0" min="0">
+      </label>
+      <label class="hours">Minutes
+      <input type="number" value="0" min="0">
+      </label>
+      <label class="hours">Seconds
+      <input type="number" value="0" min="0">
+      </label>
+      <a id="alarm-set" class="btn-success">Alarm Set</a>
+      <a id="alarm-clear" class="btn-danger">Alarm Clear</a>
+    </div>
+  </body>
+</html>
